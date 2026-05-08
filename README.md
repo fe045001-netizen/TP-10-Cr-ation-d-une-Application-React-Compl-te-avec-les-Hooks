@@ -1,70 +1,185 @@
-# Getting Started with Create React App
+````md id="r8g4hf"
+# Todo App Avancée avec React Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Ce projet est une application React complète réalisée dans le cadre du TP :
 
-In the project directory, you can run:
+**"Création d'une Application React Complète avec les Hooks"**
 
-### `npm start`
+L’objectif du projet est de découvrir et pratiquer les hooks fondamentaux et avancés de React à travers une application interactive de gestion de tâches.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+L’application inclut :
+- gestion de tâches
+- changement de thème
+- navigation avec React Router
+- optimisation des performances
+- hooks personnalisés
+- transitions React 18
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# Technologies utilisées
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js
+- React Router DOM
+- JavaScript ES6+
+- CSS3
+- Hooks React
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Hooks utilisés
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Hooks fondamentaux
+- useState
+- useEffect
+- useContext
+- useReducer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Hooks avancés
+- useMemo
+- useCallback
+- useRef
+- useLayoutEffect
+- useImperativeHandle
+- useDebugValue
+- useTransition
+- useDeferredValue
 
-### `npm run eject`
+## Hooks personnalisés
+- useOnlineStatus
+- useLocalStorage
+- autres hooks personnalisés
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Fonctionnalités principales
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Gestion des tâches
+- Ajouter une tâche
+- Modifier une tâche
+- Supprimer une tâche
+- Marquer une tâche comme terminée
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Gestion du thème
+- Mode clair / sombre
+- Utilisation de Context API
 
-## Learn More
+## Navigation
+- React Router
+- Plusieurs pages dynamiques
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Optimisation des performances
+- Mémorisation avec useMemo
+- Optimisation avec useCallback
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Interface réactive
+- useTransition
+- useDeferredValue
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Structure du projet
 
-### Analyzing the Bundle Size
+```bash
+todo-app-avancee/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── contexts/
+│   ├── hooks/
+│   ├── pages/
+│   ├── reducers/
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+│
+├── package.json
+└── README.md
+````
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+# Installation du projet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 1. Cloner le projet
 
-### Advanced Configuration
+```bash
+git clone <url-du-projet>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 2. Accéder au dossier
 
-### Deployment
+```bash
+cd todo-app-avancee
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 3. Installer les dépendances
 
-### `npm run build` fails to minify
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 4. Lancer l’application
+
+```bash
+npm start
+```
+
+L’application sera accessible sur :
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# Pages de l’application
+
+| Page      | Description                |
+| --------- | -------------------------- |
+| HomePage  | Page principale            |
+| HooksPage | Démonstration des hooks    |
+| AboutPage | Informations sur le projet |
+
+---
+
+# Captures d’écran
+
+<img width="1352" height="639" alt="Capture d’écran 2026-05-08 012859" src="https://github.com/user-attachments/assets/5cd92752-a671-4f40-b5d9-d26209bfe4ff" />
+
+
+# Objectifs pédagogiques
+
+Ce TP permet de comprendre :
+
+* la gestion d’état dans React
+* les effets secondaires
+* le partage de données avec Context
+* l’optimisation des performances
+* la création de hooks personnalisés
+* la navigation entre les pages
+
+---
+
+# Auteur
+
+Projet réalisé par :
+
+**Fatima-ezzahra Sahmad**
+
+Dans le cadre du module :
+
+**Développement web full-stack avec JavaScript**
+
+---
+
+# Conclusion
+
+Cette application constitue une base solide pour le développement d’applications React modernes utilisant les hooks et les bonnes pratiques de développement.
+
+```
+```
