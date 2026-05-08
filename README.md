@@ -1,4 +1,4 @@
-````md id="r8g4hf"
+
 # Todo App Avancée avec React Hooks
 
 ## Description
@@ -181,5 +181,4 @@ Dans le cadre du module :
 
 Cette application constitue une base solide pour le développement d’applications React modernes utilisant les hooks et les bonnes pratiques de développement.
 
-```
-```
+
